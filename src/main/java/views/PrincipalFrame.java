@@ -11,6 +11,7 @@ public class PrincipalFrame extends JFrame {
     public PrincipalFrame(FireController fc){
 
         cp = new ControlPanel(fc);
+        this.add(cp);
         setupFrame();
     }
 

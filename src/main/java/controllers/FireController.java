@@ -7,6 +7,9 @@ public class FireController {
 
     private PrincipalFrame principalFrame;
     private FireModel fireModel;
+    private float fireLength = (float) 0.88;
+
+    private boolean primerPitjat = true;
 
     public void start(){
         principalFrame = new PrincipalFrame(this);
@@ -17,4 +20,19 @@ public class FireController {
 
     }
 
+    public void pauseFire(){
+        if(primerPitjat){
+        System.out.println("C pausó");
+        }else{
+            System.out.println("C reanudó");}
+    }
+
+
+    public void setFireLength(float v) {
+        this.fireLength = v;
+    }
+
+    public float getFireLength(){
+        return fireLength;
+    }
 }
