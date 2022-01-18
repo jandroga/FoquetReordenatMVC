@@ -12,7 +12,6 @@ public class ControlPanel extends JPanel {
 
     public ControlPanel(FireController fc){
         super(new GridBagLayout());
-
         this.fc = fc;
         this.setSize(500,500);
         this.add(fcp);
